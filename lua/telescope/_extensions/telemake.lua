@@ -19,11 +19,11 @@ end
 return require("telescope").register_extension {
     exports = {
         telemake = function(opts)
-            local handle = io.popen(COMMAND)
-            if not file_exists("Makefile") then
+            if file_exists("Makefile") == false then
                 return false
             end
 
+            local handle = io.popen(COMMAND)
             local result = handle:read("*a")
             handle:close()
 
