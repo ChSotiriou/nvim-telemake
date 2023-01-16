@@ -4,7 +4,7 @@ local actions = require "telescope.actions"
 local action_state = require "telescope.actions.state"
 local conf = require("telescope.config").values
 
-COMMAND = "grep -oP '^[a-zA-Z0-9_-]+(?=:)' Makefile"
+COMMAND = "grep -oP '^[a-zA-Z0-9_-]+(?=:)' Makefile | sort -u"
 
 function file_exists(name)
     local f = io.open(name, "r")

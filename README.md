@@ -4,6 +4,8 @@ An nvim extension which uses
 [telescope](https://github.com/nvim-telescope/telescope.nvim) to show select
 and execute Makefile targets.
 
+![](./assets/exampleImage.png)
+
 ## Installation
 
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
